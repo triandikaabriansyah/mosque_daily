@@ -1,29 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:mosque_daily/view/homepage.dart';
 
-class Daily extends StatefulWidget{
-  @override
-  _DailyState createState() => new _DailyState();
+void main(){
+  runApp(Daily());
 }
 
-class _DailyState extends State<Daily> {
+class Daily extends StatelessWidget {
   @override
-  void initState() {
-    super.initState();
-  }
-
   Widget build(BuildContext context) {
-    return new Scaffold(
-        body: SafeArea(
-          child: new Container(
-              color: Colors.white,
-              child: Center(
-                child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text('Daily'),
-                    ]),
-              )),
-        ));
+    return MaterialApp(
+      title: "DailyNews",
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: Colors.white,
+      ),
+      home: HomePage(),
+    );
   }
 }
-

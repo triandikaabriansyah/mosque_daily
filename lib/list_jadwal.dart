@@ -37,7 +37,7 @@ class ListJadwal extends StatelessWidget {
     return ListView(
       children: <Widget>[
         containerWaktu(
-            'subuh', data.results.datetime[0].times.Fajr.toUpperCase()),
+            'Subuh', data.results.datetime[0].times.Fajr.toUpperCase()),
         // knp ada angka 0 nya(date time itu array)
         containerWaktu(
             'Dhuzur', data.results.datetime[0].times.Dhuhr.toUpperCase()),

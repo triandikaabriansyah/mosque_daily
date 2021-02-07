@@ -5,7 +5,7 @@ import 'package:mosque_daily/news_item.dart';
 import 'package:mosque_daily/helper/data_request.dart';
 
 class NewsByCategories extends StatefulWidget {
-  final String newsCategory;
+  final newsCategory;
   const NewsByCategories({this.newsCategory});
 
   @override
